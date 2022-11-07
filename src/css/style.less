@@ -1,0 +1,55 @@
+// variaveis globais
+@import url("_variaveis.less");
+
+// estilos gerais de html
+@import url("_geral.less");
+
+// estilos somente de menu
+@import url("menu.less");
+
+// estilos da tela inicial
+@import url("inicio.less");
+
+// estilos do rodape
+@import url("rodape.less");
+
+// ---------------------------------------------------
+
+.rodape {
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: black;
+
+    background: url("../assets/img/img4.png") no-repeat center black;
+    // background-image;
+    background-size: cover;
+
+    .links {
+
+        display: flex;
+        // flex-direction: column;
+
+        justify-content: space-around;
+
+        margin-bottom: 3rem;
+        a {
+            margin-bottom: 1rem;
+            color: @cordestaque;
+            
+            transition: all 0.5s ease;
+            
+            &:hover {
+                color: white;
+            }
+        }
+
+    }
+
+    .direitos{
+        text-align: center;
+        font-size: 15px;
+        opacity: 0.5;
+    }
+
+}
